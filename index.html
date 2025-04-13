@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier Label Verification System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="app-title">Courier Label Verification System</h1>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="language-select" id="language-label">Language:</label>
+                <select id="language-select">
+                    <option value="English">English</option>
+                    <option value="Chinese">Chinese</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="operator-entry" id="operator-label">Operator:</label>
+                <input type="text" id="operator-entry">
+            </div>
+
+            <div class="control-group">
+                <label for="courier-select" id="courier-label">Select Courier Type:</label>
+                <select id="courier-select">
+                    </select>
+            </div>
+
+            <div class="control-group">
+                <label for="scan-entry" id="scan-label">Scan Barcode:</label>
+                <input type="text" id="scan-entry">
+            </div>
+
+            <div class="control-group status-display">
+                <label id="status-label">Status:</label>
+                <span id="status-indicator">Waiting for scan...</span>
+            </div>
+
+            <div class="control-group status-display">
+                <label id="actual-label">Actual Classification:</label>
+                <span id="actual-indicator">Unknown</span>
+            </div>
+        </div> <div class="history">
+            <h2 id="scan-history-title">Scan History</h2>
+            <div class="table-container">
+                <table id="history-table">
+                    <thead>
+                        <tr id="history-header-row">
+                            </tr>
+                    </thead>
+                    <tbody id="history-body">
+                        </tbody>
+                </table>
+            </div>
+        </div> <div class="buttons">
+            <button id="clear-btn">Clear History</button>
+            <button id="save-btn">Save History</button>
+        </div> </div> <audio id="correct-sound" src="correct.wav" preload="auto"></audio>
+    <audio id="incorrect-sound" src="incorrect.wav" preload="auto"></audio>
+
+    <script src="script.js"></script>
+	</div> <audio id="correct-sound" src="correct.wav" preload="auto"></audio>
+    <audio id="incorrect-sound" src="incorrect.wav" preload="auto"></audio>
+
+    <footer id="app-footer">
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
