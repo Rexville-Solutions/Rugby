@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const barcodePatterns = {
         'EVRI': [/H[0-9]{2}[A-Z]{3}[0-9]{10}$/, /^T[0-9]{2}[A-Z]{3}[0-9]{10}$/],
         'ROYAL MAIL': [/^[A-Z]{2}[0-9]{9}GB$/],
-        'DPD': [/^%0C[A-Z0-9]{4,5}[0-9]{20}$/],
+        'DPD': [/^%[A-Z0-9]{12}7777[0-9]{11}$/],
         'YODEL': [/^JJD[0-9]{16}$/],
         'DX': [/^G[0-9]{11}$/],
         'UPS': [/^1Z[A-Z0-9]{16}$/],
